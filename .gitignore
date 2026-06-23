@@ -1,0 +1,14 @@
+# Airtest가 실행 시 생성하는 로그 폴더 및 파일 제외
+*.log/
+log/
+*_report/
+.logs/
+
+# Python 관련 빌드 및 캐시 파일 제외
+__pycache__/
+*.pyc
+
+# OS 및 IDE 설정 파일 제외
+.vscode/
+.idea/
+.DS_Store
