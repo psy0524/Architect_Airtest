@@ -17,11 +17,12 @@
 
 | 항목 (Component) | 스펙 상세 (Specifications) | 비고 (Note) |
 | :--- | :--- | :--- |
-| **Device Model** | Samsung Galaxy Series (스마트폰 실기기) | ADB USB Debugging 연동 |
-| **OS Version** | Android 10 이상 (최신 One UI 환경) | 개발자 옵션 및 자동 보안 차단 해제 |
-| **Screen Resolution**| **2340 x 1080 (FHD+)** | 스크립트 내 기준 해상도 |
+| **Device Model** | **Samsung Galaxy S23 (Base)** | ADB USB Debugging 실기기 연동 |
+| **OS Version** | **Android 16** | 개발자 옵션 및 자동 보안 차단 해제 |
+| **Memory / Storage**| **8GB RAM / 512GB ROM** | 내부 리소스 로딩 속도 기준 환경 |
+| **Screen Resolution**| **2340 x 1080 (FHD+)** | 스크립트 이미지 템플릿 제작 해상도 |
 | **Aspect Ratio** | 19.5 : 9 | 인게임 UI 레이아웃 정합성 기준 |
-| **Capture Method** | Javacap / ADBCAP Mode | 미러링 및 스냅샷 인젝션 엔진 |
+| **Capture Method** | Javacap / ADBCAP Mode | 고속 미러링 및 스냅샷 인젝션 엔진 |
 | **Touch Method** | MAXTOUCH | 디바이스 터치 컨트롤 드라이버 |
 
 ---
@@ -31,7 +32,7 @@
 * **POM (Page Object Model) 디자인 패턴 적용**
   * UI 요소(템플릿 이미지 객체) 및 캐릭터 조작 액션(`pages/`)과 실제 단언문 중심의 테스트 시나리오 레이어(`tests/`)를 완벽히 분리하여 유지보수 비용을 최소화했습니다.
 * **실시간 UI 인지형 동적 분기 테스트 (Dynamic Conditional Testing)**
-  * 유저 가방 내부의 재료 보유량(유동 데이터)에 따른 의존성 문제를 해결하기 위해 `exists()` 함수 기반의 실시간 판단 로직을 구현했습니다. 단일 스크립트로 정상 성공 구간과 시스템 예외 차단 구간을 완벽하게 교차 검증합니다.
+  * 유저 가방 내부의 재료 보유량(유동 데이터)에 따른 의존성 문제를 해결하기 위해 `exists()` 함수 기반의 실시간 판단 로직을 구현했습니다. 단일 스크립트로 정상 성공 구간และ 시스템 예외 차단 구간을 완벽하게 교차 검증합니다.
 * **Flakiness (테스트 불안정성) 제어 및 오탐 차단**
   * 스킬 해제 후 불투명한 인게임 UI 배경으로 인한 가짜 배경 오탐(False-Positive) 결함을 해결하기 위해, 특정 이미지 객체의 매칭 합격 기준선(`threshold`)을 **0.90으로 상향 보정**하여 테스트의 신뢰도를 100%로 확보했습니다.
 * **도메인 격리형 자산 관리 시스템 (Domain Asset Separation)**
