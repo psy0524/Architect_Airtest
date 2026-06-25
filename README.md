@@ -8,7 +8,7 @@
 
 ## 🛠️ Tech Stack & Environment
 
-* **Language:** Python 3.x
+* **Language:** Python 3.6.8
 * **Framework:** Airtest Framework (Aircv 이미지 매칭 구조)
 * **Protocol:** ADB (Android Debug Bridge)
 
