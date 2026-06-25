@@ -17,7 +17,7 @@
 
 | 항목 (Component) | 스펙 상세 (Specifications) | 비고 (Note) |
 | :--- | :--- | :--- |
-| **Device Model** | **Samsung Galaxy S23 (Base)** | ADB USB Debugging 실기기 연동 |
+| **Device Model** | **Samsung Galaxy S23** | ADB USB Debugging 실기기 연동 |
 | **OS Version** | **Android 16** | 개발자 옵션 및 자동 보안 차단 해제 |
 | **Memory / Storage**| **8GB RAM / 512GB ROM** | 내부 리소스 로딩 속도 기준 환경 |
 | **Screen Resolution**| **2340 x 1080 (FHD+)** | 스크립트 이미지 템플릿 제작 해상도 |
